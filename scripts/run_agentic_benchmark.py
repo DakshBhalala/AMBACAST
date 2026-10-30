@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Run Full Official GIFT-Eval Benchmark for CompactTS-Agent.
+"""Simulate Offline Meta-Routing Policy Selection for CompactTS-Agent.
 
-Executes autonomous scale-invariant series profiling, open foundation routing,
-metric extraction, and benchmark validation across all 97 dataset configurations.
+Executes autonomous scale-invariant series profiling and demonstrates the
+agent's expert selection policy across benchmarked configurations.
 
 Attribution: Daksh Bhalala
 License: BSL-1.1
@@ -177,7 +177,7 @@ def run_benchmark():
         "model_dtype": "float32",
         "org": "Daksh Bhalala",
         "testdata_leakage": "No",
-        "replication_code_available": "Yes",
+        "replication_code_available": "No",
         "code_link": "https://github.com/DakshBhalala/CompactTS-Agent",
         "description": "CompactTS-Agent: Autonomous agentic meta-forecaster combining scale-invariant spectral entropy, distribution drift, and volatility clustering with calibrated quantile projections.",
     }

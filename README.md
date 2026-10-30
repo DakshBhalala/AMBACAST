@@ -55,19 +55,20 @@ pip install -e .
 
 ---
 
-## 🔁 Reproducing Benchmark Results
+## 📊 Benchmark Evaluation & Policy Simulation
 
-Evaluation code and configs are provided to reproduce results against official benchmark configurations:
-
-### Option A: Run Full GIFT-Eval Benchmark (All 97 Configurations)
+### Option A: Offline Meta-Routing Policy Simulation
+Demonstrates the autonomous meta-router's dataset profiling and foundation expert selection across benchmark configurations:
 
 ```bash
-# Run full agentic benchmark and validation across all 97 configurations
+# Run meta-routing policy simulation across configurations
 python scripts/run_agentic_benchmark.py
 
 # Validate submission folder schema
 python scripts/validate_results.py results/CompactTS-Agent
 ```
+
+*Note: In accordance with GIFT-Eval leaderboard guidelines for proprietary/agentic harnesses (e.g. Google's STRIDE and RegLab-AH-2), `replication_code_available` is registered as `"No"` for this submission because the end-to-end multi-model orchestration harness is governed under BSL 1.1.*
 
 ### Option B: Python API Usage
 
