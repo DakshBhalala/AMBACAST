@@ -1,0 +1,38 @@
+Business Source License 1.1
+
+Parameters
+
+Licensor:                 Daksh Bhalala
+Licensed Work:            CompactTS-Agent (including all associated source code, algorithms, architectures, scripts, and documentation)
+Additional Use Grant:     You may use the Licensed Work free of charge for non-commercial research, academic study, education, personal experimentation, internal development and testing, and independent benchmark evaluation and replication (including GIFT-Eval and FEV-Bench evaluation).
+Change Date:              January 1, 2030
+Change License:           Apache License, Version 2.0
+
+--------------------------------------------------------------------------------
+
+Notice
+
+The Business Source License 1.1 (the "License") is not an Open Source Initiative (OSI) approved license. 
+However, the Licensor makes the source code publicly available under the terms of this License.
+On the Change Date specified above, the Licensed Work will automatically transition to and be governed by the Change License specified above.
+
+--------------------------------------------------------------------------------
+
+Terms
+
+1. Grant of License.
+Subject to the terms and conditions of this License, the Licensor hereby grants to you a worldwide, royalty-free, non-exclusive, non-transferable license to copy, modify, create derivative works of, and distribute the Licensed Work solely in accordance with the Additional Use Grant specified above.
+
+2. Commercial Use & Production Restrictions.
+Any Use of the Licensed Work that is not expressly permitted by the Additional Use Grant (including, without limitation, deploying the Licensed Work in commercial production environments, offering the Licensed Work or its outputs as a paid service or API, integrating the Licensed Work into commercial products, or using the Licensed Work for commercial profit) is STRICTLY PROHIBITED unless authorized under a separate, written commercial license agreement signed by Daksh Bhalala.
+
+3. Attribution & Copyright Notices.
+You must retain all copyright, patent, trademark, and attribution notices from the Licensed Work in all copies and substantial portions of the Licensed Work that you distribute.
+
+4. Commercial Licensing Inquiries.
+To obtain a commercial license, enterprise deployment rights, or commercial integration permissions, please contact:
+Daksh Bhalala
+Repository: https://github.com/DakshBhalala/CompactTS-Agent
+
+5. Disclaimer of Warranties & Limitation of Liability.
+THE LICENSED WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE LICENSED WORK OR THE USE OR OTHER DEALINGS IN THE LICENSED WORK.

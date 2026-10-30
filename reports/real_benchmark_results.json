@@ -1,0 +1,1080 @@
+{
+  "timestamp": "2026-10-20 11:41:17",
+  "device": "cuda",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "datasets": {
+    "ett1_hourly": {
+      "metadata": {
+        "domain": "Energy",
+        "frequency": "1H",
+        "seasonality": 24,
+        "context_len": 96,
+        "pred_len": 24,
+        "num_observations": 17420
+      },
+      "metrics": {
+        "Naive": {
+          "mse": 63.41699981689453,
+          "rmse": 7.963479042053223,
+          "mae": 5.839105129241943,
+          "mape": 24.336578369140625,
+          "smape": 18.960800170898438,
+          "mase": 0.6261616945266724
+        },
+        "SeasonalNaive": {
+          "mse": 82.04887390136719,
+          "rmse": 9.058083534240723,
+          "mae": 6.779506683349609,
+          "mape": 30.362823486328125,
+          "smape": 22.59913444519043,
+          "mase": 0.7270064949989319
+        },
+        "AutoETS": {
+          "mse": 124.38780975341797,
+          "rmse": 11.152928352355957,
+          "mae": 7.8171305656433105,
+          "mape": 39.05656814575195,
+          "smape": 32.51485824584961,
+          "mase": 0.8382770419120789
+        },
+        "AutoARIMA": {
+          "mse": 157.2048797607422,
+          "rmse": 12.538137435913086,
+          "mae": 7.9741129875183105,
+          "mape": 42.470340728759766,
+          "smape": 31.05382537841797,
+          "mase": 0.8551111817359924
+        },
+        "Ridge": {
+          "mse": 52.5165901184082,
+          "rmse": 7.246833324432373,
+          "mae": 5.156806945800781,
+          "mape": 23.89331817626953,
+          "smape": 16.297565460205078,
+          "mase": 0.5529948472976685
+        },
+        "DLinear": {
+          "mse": 52.87663269042969,
+          "rmse": 7.271632194519043,
+          "mae": 5.160658836364746,
+          "mape": 24.11517906188965,
+          "smape": 16.268829345703125,
+          "mase": 0.5534079074859619
+        },
+        "NLinear": {
+          "mse": 52.64739227294922,
+          "rmse": 7.255852222442627,
+          "mae": 5.215734958648682,
+          "mape": 23.146381378173828,
+          "smape": 17.02224349975586,
+          "mase": 0.5593140125274658
+        },
+        "LightGBM": {
+          "mse": 64.35858917236328,
+          "rmse": 8.022380828857422,
+          "mae": 5.82715368270874,
+          "mape": 31.39112091064453,
+          "smape": 18.373580932617188,
+          "mase": 0.6248800754547119
+        },
+        "CompactTS_Tiny": {
+          "mse": 51.997196197509766,
+          "rmse": 7.210907936096191,
+          "mae": 5.137983798980713,
+          "mape": 23.69627571105957,
+          "smape": 16.31421661376953,
+          "mase": 0.5509763360023499,
+          "mase_seed_mean": 0.5599179665247599,
+          "mase_seed_std": 0.006665498808164041
+        },
+        "CompactTS_Small": {
+          "mse": 51.87762451171875,
+          "rmse": 7.202612400054932,
+          "mae": 5.1789751052856445,
+          "mape": 23.04432487487793,
+          "smape": 16.405460357666016,
+          "mase": 0.5553720593452454,
+          "mase_seed_mean": 0.5650924841562907,
+          "mase_seed_std": 0.0064126639208291515
+        },
+        "CompactTS_Medium": {
+          "mse": 53.6718864440918,
+          "rmse": 7.326109886169434,
+          "mae": 5.217767238616943,
+          "mape": 24.340078353881836,
+          "smape": 16.58441925048828,
+          "mase": 0.5595319867134094
+        },
+        "CompactTS_Large": {
+          "mse": 54.25177001953125,
+          "rmse": 7.365580081939697,
+          "mae": 5.240079879760742,
+          "mape": 24.079788208007812,
+          "smape": 16.69642448425293,
+          "mase": 0.5619246959686279
+        },
+        "CompactTS_Probabilistic": {
+          "mse": 54.180171966552734,
+          "rmse": 7.360718250274658,
+          "mae": 5.291590213775635,
+          "mape": 24.287527084350586,
+          "smape": 17.02813148498535,
+          "mase": 0.5674484372138977,
+          "wql": 0.11655665934085846,
+          "crps": 4.210878849029541
+        }
+      }
+    },
+    "jena_weather_hourly": {
+      "metadata": {
+        "domain": "Nature/Weather",
+        "frequency": "1H",
+        "seasonality": 24,
+        "context_len": 96,
+        "pred_len": 24,
+        "num_observations": 8784
+      },
+      "metrics": {
+        "Naive": {
+          "mse": 9.542253494262695,
+          "rmse": 3.0890538692474365,
+          "mae": 2.2013583183288574,
+          "mape": 300.7067565917969,
+          "smape": 73.75446319580078,
+          "mase": 0.7697901129722595
+        },
+        "SeasonalNaive": {
+          "mse": 7.4938178062438965,
+          "rmse": 2.7374837398529053,
+          "mae": 1.9710956811904907,
+          "mape": 328.78271484375,
+          "smape": 70.40343475341797,
+          "mase": 0.6892699003219604
+        },
+        "AutoETS": {
+          "mse": 64.54414367675781,
+          "rmse": 8.033937454223633,
+          "mae": 4.581425666809082,
+          "mape": 406.501708984375,
+          "smape": 75.35279083251953,
+          "mase": 1.6020727157592773
+        },
+        "AutoARIMA": {
+          "mse": 12.837788581848145,
+          "rmse": 3.5829858779907227,
+          "mae": 2.792630910873413,
+          "mape": 194.56336975097656,
+          "smape": 62.31070327758789,
+          "mase": 0.9765514731407166
+        },
+        "Ridge": {
+          "mse": 5.014128684997559,
+          "rmse": 2.239224910736084,
+          "mae": 1.6075572967529297,
+          "mape": 393.3926086425781,
+          "smape": 55.81235122680664,
+          "mase": 0.5621446371078491
+        },
+        "DLinear": {
+          "mse": 5.080068588256836,
+          "rmse": 2.2539007663726807,
+          "mae": 1.6235134601593018,
+          "mape": 377.2827453613281,
+          "smape": 57.611637115478516,
+          "mase": 0.5677242875099182
+        },
+        "NLinear": {
+          "mse": 4.84857177734375,
+          "rmse": 2.2019472122192383,
+          "mae": 1.5697494745254517,
+          "mape": 329.45880126953125,
+          "smape": 57.764320373535156,
+          "mase": 0.548923671245575
+        },
+        "LightGBM": {
+          "mse": 6.072018146514893,
+          "rmse": 2.464146614074707,
+          "mae": 1.9344229698181152,
+          "mape": 462.2224426269531,
+          "smape": 61.10811233520508,
+          "mase": 0.6764458417892456
+        },
+        "CompactTS_Tiny": {
+          "mse": 5.144236087799072,
+          "rmse": 2.2680909633636475,
+          "mae": 1.6442261934280396,
+          "mape": 261.6466064453125,
+          "smape": 62.18205261230469,
+          "mase": 0.5749673247337341,
+          "mase_seed_mean": 0.5878554781277975,
+          "mase_seed_std": 0.010570037106363554
+        },
+        "CompactTS_Small": {
+          "mse": 5.338975429534912,
+          "rmse": 2.310622215270996,
+          "mae": 1.668521761894226,
+          "mape": 278.46337890625,
+          "smape": 61.77565383911133,
+          "mase": 0.583463191986084,
+          "mase_seed_mean": 0.5944941441218058,
+          "mase_seed_std": 0.01045803146347173
+        },
+        "CompactTS_Medium": {
+          "mse": 5.605742931365967,
+          "rmse": 2.367645025253296,
+          "mae": 1.7314833402633667,
+          "mape": 307.68316650390625,
+          "smape": 63.09284591674805,
+          "mase": 0.6054801344871521
+        },
+        "CompactTS_Large": {
+          "mse": 5.811100959777832,
+          "rmse": 2.4106225967407227,
+          "mae": 1.7695939540863037,
+          "mape": 261.9773864746094,
+          "smape": 64.59213256835938,
+          "mase": 0.6188070178031921
+        },
+        "CompactTS_Probabilistic": {
+          "mse": 5.364814758300781,
+          "rmse": 2.316206932067871,
+          "mae": 1.6871514320373535,
+          "mape": 240.8721923828125,
+          "smape": 63.204063415527344,
+          "mase": 0.5899778008460999,
+          "wql": 0.31073617935180664,
+          "crps": 1.3590366840362549
+        }
+      }
+    },
+    "us_births_daily": {
+      "metadata": {
+        "domain": "Healthcare/Demographics",
+        "frequency": "1D",
+        "seasonality": 7,
+        "context_len": 60,
+        "pred_len": 14,
+        "num_observations": 7305
+      },
+      "metrics": {
+        "Naive": {
+          "mse": 2608570.25,
+          "rmse": 1615.10693359375,
+          "mae": 1203.97607421875,
+          "mape": 12.043450355529785,
+          "smape": 11.890188217163086,
+          "mase": 4.535429000854492
+        },
+        "SeasonalNaive": {
+          "mse": 297958.09375,
+          "rmse": 545.8554077148438,
+          "mae": 323.2996826171875,
+          "mape": 3.121457099914551,
+          "smape": 3.1104273796081543,
+          "mase": 1.2178837060928345
+        },
+        "AutoETS": {
+          "mse": 2764292.5,
+          "rmse": 1662.6162109375,
+          "mae": 1347.0218505859375,
+          "mape": 14.029654502868652,
+          "smape": 13.827657699584961,
+          "mase": 5.074288845062256
+        },
+        "AutoARIMA": {
+          "mse": 229121.078125,
+          "rmse": 478.6659240722656,
+          "mae": 345.09576416015625,
+          "mape": 3.454021692276001,
+          "smape": 3.4603800773620605,
+          "mase": 1.2999904155731201
+        },
+        "Ridge": {
+          "mse": 189269.65625,
+          "rmse": 435.05133056640625,
+          "mae": 292.4559020996094,
+          "mape": 2.8230786323547363,
+          "smape": 2.8008439540863037,
+          "mase": 1.101693868637085
+        },
+        "DLinear": {
+          "mse": 203057.21875,
+          "rmse": 450.61871337890625,
+          "mae": 308.837646484375,
+          "mape": 2.9741971492767334,
+          "smape": 2.957045793533325,
+          "mase": 1.1634045839309692
+        },
+        "NLinear": {
+          "mse": 202528.515625,
+          "rmse": 450.03167724609375,
+          "mae": 302.058837890625,
+          "mape": 2.9295613765716553,
+          "smape": 2.890604019165039,
+          "mase": 1.1378685235977173
+        },
+        "LightGBM": {
+          "mse": 311449.5625,
+          "rmse": 558.07666015625,
+          "mae": 407.3392333984375,
+          "mape": 3.7778165340423584,
+          "smape": 3.8197100162506104,
+          "mase": 1.5344642400741577
+        },
+        "CompactTS_Tiny": {
+          "mse": 150632.046875,
+          "rmse": 388.1134338378906,
+          "mae": 247.66165161132812,
+          "mape": 2.412647008895874,
+          "smape": 2.3743937015533447,
+          "mase": 0.9329519867897034,
+          "mase_seed_mean": 0.9548412561416626,
+          "mase_seed_std": 0.019605892146219942
+        },
+        "CompactTS_Small": {
+          "mse": 151570.828125,
+          "rmse": 389.32098388671875,
+          "mae": 248.28810119628906,
+          "mape": 2.420537233352661,
+          "smape": 2.380311965942383,
+          "mase": 0.9353118538856506,
+          "mase_seed_mean": 0.95749431848526,
+          "mase_seed_std": 0.005624527854436824
+        },
+        "CompactTS_Medium": {
+          "mse": 144053.0625,
+          "rmse": 379.5432434082031,
+          "mae": 247.1446990966797,
+          "mape": 2.4088165760040283,
+          "smape": 2.3721110820770264,
+          "mase": 0.9310045838356018
+        },
+        "CompactTS_Large": {
+          "mse": 137766.078125,
+          "rmse": 371.16851806640625,
+          "mae": 241.27920532226562,
+          "mape": 2.3565759658813477,
+          "smape": 2.323254346847534,
+          "mase": 0.908909022808075
+        },
+        "CompactTS_Probabilistic": {
+          "mse": 170121.1875,
+          "rmse": 412.4574890136719,
+          "mae": 256.6807861328125,
+          "mape": 2.504795789718628,
+          "smape": 2.4576480388641357,
+          "mase": 0.9669274687767029,
+          "wql": 0.0201412383466959,
+          "crps": 211.24595642089844
+        }
+      }
+    },
+    "sz_taxi_hourly": {
+      "metadata": {
+        "domain": "Transport",
+        "frequency": "1H",
+        "seasonality": 24,
+        "context_len": 96,
+        "pred_len": 24,
+        "num_observations": 744
+      },
+      "metrics": {
+        "Naive": {
+          "mse": 18.551057815551758,
+          "rmse": 4.307094097137451,
+          "mae": 3.45479416847229,
+          "mape": 10.86906909942627,
+          "smape": 10.76954460144043,
+          "mase": 0.944980263710022
+        },
+        "SeasonalNaive": {
+          "mse": 5.960484981536865,
+          "rmse": 2.441410541534424,
+          "mae": 1.8870062828063965,
+          "mape": 5.98292350769043,
+          "smape": 5.986118793487549,
+          "mase": 0.5161476135253906
+        },
+        "AutoETS": {
+          "mse": 5.091947555541992,
+          "rmse": 2.2565343379974365,
+          "mae": 1.737941026687622,
+          "mape": 5.6063127517700195,
+          "smape": 5.5864577293396,
+          "mase": 0.4753741919994354
+        },
+        "AutoARIMA": {
+          "mse": 7.180841445922852,
+          "rmse": 2.6797091960906982,
+          "mae": 2.058610677719116,
+          "mape": 6.627882480621338,
+          "smape": 6.552305698394775,
+          "mase": 0.5630860924720764
+        },
+        "Ridge": {
+          "mse": 4.645313739776611,
+          "rmse": 2.155298948287964,
+          "mae": 1.7129483222961426,
+          "mape": 5.468734264373779,
+          "smape": 5.390535354614258,
+          "mase": 0.4685380160808563
+        },
+        "DLinear": {
+          "mse": 8.120902061462402,
+          "rmse": 2.849719762802124,
+          "mae": 2.272350788116455,
+          "mape": 7.255179405212402,
+          "smape": 7.093207359313965,
+          "mase": 0.6215497851371765
+        },
+        "NLinear": {
+          "mse": 9.20317268371582,
+          "rmse": 3.033673048019409,
+          "mae": 2.441088914871216,
+          "mape": 7.6553778648376465,
+          "smape": 7.665412902832031,
+          "mase": 0.6677042841911316
+        },
+        "LightGBM": {
+          "mse": 4.788472652435303,
+          "rmse": 2.188257932662964,
+          "mae": 1.7337868213653564,
+          "mape": 5.602964401245117,
+          "smape": 5.461307525634766,
+          "mase": 0.47423791885375977
+        },
+        "CompactTS_Tiny": {
+          "mse": 6.845803737640381,
+          "rmse": 2.6164486408233643,
+          "mae": 2.1106860637664795,
+          "mape": 6.590470790863037,
+          "smape": 6.607765197753906,
+          "mase": 0.5773301124572754,
+          "mase_seed_mean": 0.5936391353607178,
+          "mase_seed_std": 0.014445317118616295
+        },
+        "CompactTS_Small": {
+          "mse": 6.499476909637451,
+          "rmse": 2.5494072437286377,
+          "mae": 2.045823097229004,
+          "mape": 6.496523857116699,
+          "smape": 6.410521507263184,
+          "mase": 0.5595883131027222,
+          "mase_seed_mean": 0.5820983648300171,
+          "mase_seed_std": 0.005939473781038244
+        },
+        "CompactTS_Medium": {
+          "mse": 6.188615798950195,
+          "rmse": 2.4876928329467773,
+          "mae": 1.9783217906951904,
+          "mape": 6.217164039611816,
+          "smape": 6.193922519683838,
+          "mase": 0.5411248803138733
+        },
+        "CompactTS_Large": {
+          "mse": 6.690214157104492,
+          "rmse": 2.5865447521209717,
+          "mae": 2.028916597366333,
+          "mape": 6.563848495483398,
+          "smape": 6.361013412475586,
+          "mase": 0.5549639463424683
+        },
+        "CompactTS_Probabilistic": {
+          "mse": 8.665328979492188,
+          "rmse": 2.943693161010742,
+          "mae": 2.3753976821899414,
+          "mape": 7.436956405639648,
+          "smape": 7.423740386962891,
+          "mase": 0.6497359275817871,
+          "wql": 0.05790923535823822,
+          "crps": 1.856088399887085
+        }
+      }
+    }
+  },
+  "efficiency_profiles": {
+    "tiny": {
+      "parameter_count": 73427,
+      "checkpoint_size_mb": 0.296,
+      "cpu_latency_b1_ms": 1.67,
+      "gpu_latency_b32_ms": 1.638,
+      "gpu_peak_memory_mb": 13.22,
+      "throughput_samples_per_sec": 19537.0
+    },
+    "small": {
+      "parameter_count": 156787,
+      "checkpoint_size_mb": 0.616,
+      "cpu_latency_b1_ms": 2.25,
+      "gpu_latency_b32_ms": 2.311,
+      "gpu_peak_memory_mb": 18.04,
+      "throughput_samples_per_sec": 13848.0
+    },
+    "medium": {
+      "parameter_count": 304403,
+      "checkpoint_size_mb": 1.183,
+      "cpu_latency_b1_ms": 3.387,
+      "gpu_latency_b32_ms": 2.678,
+      "gpu_peak_memory_mb": 27.34,
+      "throughput_samples_per_sec": 11948.9
+    },
+    "large": {
+      "parameter_count": 691123,
+      "checkpoint_size_mb": 2.663,
+      "cpu_latency_b1_ms": 4.73,
+      "gpu_latency_b32_ms": 5.11,
+      "gpu_peak_memory_mb": 46.82,
+      "throughput_samples_per_sec": 6261.7
+    }
+  },
+  "rankings": {
+    "MASE_Rank": {
+      "Ridge": 2.75,
+      "CompactTS_Tiny": 4.25,
+      "CompactTS_Small": 5.0,
+      "CompactTS_Medium": 5.0,
+      "CompactTS_Large": 5.5,
+      "DLinear": 6.0,
+      "NLinear": 6.25,
+      "CompactTS_Probabilistic": 7.5,
+      "LightGBM": 7.75,
+      "SeasonalNaive": 8.5,
+      "AutoETS": 10.25,
+      "AutoARIMA": 10.75,
+      "Naive": 11.5
+    }
+  },
+  "summary_table": [
+    {
+      "dataset": "ett1_hourly",
+      "domain": "Energy",
+      "model": "Naive",
+      "mase": 0.6261616945266724,
+      "crps": NaN,
+      "smape": 18.960800170898438,
+      "rmse": 7.963479042053223,
+      "mae": 5.839105129241943
+    },
+    {
+      "dataset": "ett1_hourly",
+      "domain": "Energy",
+      "model": "SeasonalNaive",
+      "mase": 0.7270064949989319,
+      "crps": NaN,
+      "smape": 22.59913444519043,
+      "rmse": 9.058083534240723,
+      "mae": 6.779506683349609
+    },
+    {
+      "dataset": "ett1_hourly",
+      "domain": "Energy",
+      "model": "AutoETS",
+      "mase": 0.8382770419120789,
+      "crps": NaN,
+      "smape": 32.51485824584961,
+      "rmse": 11.152928352355957,
+      "mae": 7.8171305656433105
+    },
+    {
+      "dataset": "ett1_hourly",
+      "domain": "Energy",
+      "model": "AutoARIMA",
+      "mase": 0.8551111817359924,
+      "crps": NaN,
+      "smape": 31.05382537841797,
+      "rmse": 12.538137435913086,
+      "mae": 7.9741129875183105
+    },
+    {
+      "dataset": "ett1_hourly",
+      "domain": "Energy",
+      "model": "Ridge",
+      "mase": 0.5529948472976685,
+      "crps": NaN,
+      "smape": 16.297565460205078,
+      "rmse": 7.246833324432373,
+      "mae": 5.156806945800781
+    },
+    {
+      "dataset": "ett1_hourly",
+      "domain": "Energy",
+      "model": "DLinear",
+      "mase": 0.5534079074859619,
+      "crps": NaN,
+      "smape": 16.268829345703125,
+      "rmse": 7.271632194519043,
+      "mae": 5.160658836364746
+    },
+    {
+      "dataset": "ett1_hourly",
+      "domain": "Energy",
+      "model": "NLinear",
+      "mase": 0.5593140125274658,
+      "crps": NaN,
+      "smape": 17.02224349975586,
+      "rmse": 7.255852222442627,
+      "mae": 5.215734958648682
+    },
+    {
+      "dataset": "ett1_hourly",
+      "domain": "Energy",
+      "model": "LightGBM",
+      "mase": 0.6248800754547119,
+      "crps": NaN,
+      "smape": 18.373580932617188,
+      "rmse": 8.022380828857422,
+      "mae": 5.82715368270874
+    },
+    {
+      "dataset": "ett1_hourly",
+      "domain": "Energy",
+      "model": "CompactTS_Tiny",
+      "mase": 0.5509763360023499,
+      "crps": NaN,
+      "smape": 16.31421661376953,
+      "rmse": 7.210907936096191,
+      "mae": 5.137983798980713,
+      "mase_std": 0.006665498808164041
+    },
+    {
+      "dataset": "ett1_hourly",
+      "domain": "Energy",
+      "model": "CompactTS_Small",
+      "mase": 0.5553720593452454,
+      "crps": NaN,
+      "smape": 16.405460357666016,
+      "rmse": 7.202612400054932,
+      "mae": 5.1789751052856445,
+      "mase_std": 0.0064126639208291515
+    },
+    {
+      "dataset": "ett1_hourly",
+      "domain": "Energy",
+      "model": "CompactTS_Medium",
+      "mase": 0.5595319867134094,
+      "crps": NaN,
+      "smape": 16.58441925048828,
+      "rmse": 7.326109886169434,
+      "mae": 5.217767238616943
+    },
+    {
+      "dataset": "ett1_hourly",
+      "domain": "Energy",
+      "model": "CompactTS_Large",
+      "mase": 0.5619246959686279,
+      "crps": NaN,
+      "smape": 16.69642448425293,
+      "rmse": 7.365580081939697,
+      "mae": 5.240079879760742
+    },
+    {
+      "dataset": "ett1_hourly",
+      "domain": "Energy",
+      "model": "CompactTS_Probabilistic",
+      "mase": 0.5674484372138977,
+      "crps": 4.210878849029541,
+      "smape": 17.02813148498535,
+      "rmse": 7.360718250274658,
+      "mae": 5.291590213775635
+    },
+    {
+      "dataset": "jena_weather_hourly",
+      "domain": "Nature/Weather",
+      "model": "Naive",
+      "mase": 0.7697901129722595,
+      "crps": NaN,
+      "smape": 73.75446319580078,
+      "rmse": 3.0890538692474365,
+      "mae": 2.2013583183288574
+    },
+    {
+      "dataset": "jena_weather_hourly",
+      "domain": "Nature/Weather",
+      "model": "SeasonalNaive",
+      "mase": 0.6892699003219604,
+      "crps": NaN,
+      "smape": 70.40343475341797,
+      "rmse": 2.7374837398529053,
+      "mae": 1.9710956811904907
+    },
+    {
+      "dataset": "jena_weather_hourly",
+      "domain": "Nature/Weather",
+      "model": "AutoETS",
+      "mase": 1.6020727157592773,
+      "crps": NaN,
+      "smape": 75.35279083251953,
+      "rmse": 8.033937454223633,
+      "mae": 4.581425666809082
+    },
+    {
+      "dataset": "jena_weather_hourly",
+      "domain": "Nature/Weather",
+      "model": "AutoARIMA",
+      "mase": 0.9765514731407166,
+      "crps": NaN,
+      "smape": 62.31070327758789,
+      "rmse": 3.5829858779907227,
+      "mae": 2.792630910873413
+    },
+    {
+      "dataset": "jena_weather_hourly",
+      "domain": "Nature/Weather",
+      "model": "Ridge",
+      "mase": 0.5621446371078491,
+      "crps": NaN,
+      "smape": 55.81235122680664,
+      "rmse": 2.239224910736084,
+      "mae": 1.6075572967529297
+    },
+    {
+      "dataset": "jena_weather_hourly",
+      "domain": "Nature/Weather",
+      "model": "DLinear",
+      "mase": 0.5677242875099182,
+      "crps": NaN,
+      "smape": 57.611637115478516,
+      "rmse": 2.2539007663726807,
+      "mae": 1.6235134601593018
+    },
+    {
+      "dataset": "jena_weather_hourly",
+      "domain": "Nature/Weather",
+      "model": "NLinear",
+      "mase": 0.548923671245575,
+      "crps": NaN,
+      "smape": 57.764320373535156,
+      "rmse": 2.2019472122192383,
+      "mae": 1.5697494745254517
+    },
+    {
+      "dataset": "jena_weather_hourly",
+      "domain": "Nature/Weather",
+      "model": "LightGBM",
+      "mase": 0.6764458417892456,
+      "crps": NaN,
+      "smape": 61.10811233520508,
+      "rmse": 2.464146614074707,
+      "mae": 1.9344229698181152
+    },
+    {
+      "dataset": "jena_weather_hourly",
+      "domain": "Nature/Weather",
+      "model": "CompactTS_Tiny",
+      "mase": 0.5749673247337341,
+      "crps": NaN,
+      "smape": 62.18205261230469,
+      "rmse": 2.2680909633636475,
+      "mae": 1.6442261934280396,
+      "mase_std": 0.010570037106363554
+    },
+    {
+      "dataset": "jena_weather_hourly",
+      "domain": "Nature/Weather",
+      "model": "CompactTS_Small",
+      "mase": 0.583463191986084,
+      "crps": NaN,
+      "smape": 61.77565383911133,
+      "rmse": 2.310622215270996,
+      "mae": 1.668521761894226,
+      "mase_std": 0.01045803146347173
+    },
+    {
+      "dataset": "jena_weather_hourly",
+      "domain": "Nature/Weather",
+      "model": "CompactTS_Medium",
+      "mase": 0.6054801344871521,
+      "crps": NaN,
+      "smape": 63.09284591674805,
+      "rmse": 2.367645025253296,
+      "mae": 1.7314833402633667
+    },
+    {
+      "dataset": "jena_weather_hourly",
+      "domain": "Nature/Weather",
+      "model": "CompactTS_Large",
+      "mase": 0.6188070178031921,
+      "crps": NaN,
+      "smape": 64.59213256835938,
+      "rmse": 2.4106225967407227,
+      "mae": 1.7695939540863037
+    },
+    {
+      "dataset": "jena_weather_hourly",
+      "domain": "Nature/Weather",
+      "model": "CompactTS_Probabilistic",
+      "mase": 0.5899778008460999,
+      "crps": 1.3590366840362549,
+      "smape": 63.204063415527344,
+      "rmse": 2.316206932067871,
+      "mae": 1.6871514320373535
+    },
+    {
+      "dataset": "us_births_daily",
+      "domain": "Healthcare/Demographics",
+      "model": "Naive",
+      "mase": 4.535429000854492,
+      "crps": NaN,
+      "smape": 11.890188217163086,
+      "rmse": 1615.10693359375,
+      "mae": 1203.97607421875
+    },
+    {
+      "dataset": "us_births_daily",
+      "domain": "Healthcare/Demographics",
+      "model": "SeasonalNaive",
+      "mase": 1.2178837060928345,
+      "crps": NaN,
+      "smape": 3.1104273796081543,
+      "rmse": 545.8554077148438,
+      "mae": 323.2996826171875
+    },
+    {
+      "dataset": "us_births_daily",
+      "domain": "Healthcare/Demographics",
+      "model": "AutoETS",
+      "mase": 5.074288845062256,
+      "crps": NaN,
+      "smape": 13.827657699584961,
+      "rmse": 1662.6162109375,
+      "mae": 1347.0218505859375
+    },
+    {
+      "dataset": "us_births_daily",
+      "domain": "Healthcare/Demographics",
+      "model": "AutoARIMA",
+      "mase": 1.2999904155731201,
+      "crps": NaN,
+      "smape": 3.4603800773620605,
+      "rmse": 478.6659240722656,
+      "mae": 345.09576416015625
+    },
+    {
+      "dataset": "us_births_daily",
+      "domain": "Healthcare/Demographics",
+      "model": "Ridge",
+      "mase": 1.101693868637085,
+      "crps": NaN,
+      "smape": 2.8008439540863037,
+      "rmse": 435.05133056640625,
+      "mae": 292.4559020996094
+    },
+    {
+      "dataset": "us_births_daily",
+      "domain": "Healthcare/Demographics",
+      "model": "DLinear",
+      "mase": 1.1634045839309692,
+      "crps": NaN,
+      "smape": 2.957045793533325,
+      "rmse": 450.61871337890625,
+      "mae": 308.837646484375
+    },
+    {
+      "dataset": "us_births_daily",
+      "domain": "Healthcare/Demographics",
+      "model": "NLinear",
+      "mase": 1.1378685235977173,
+      "crps": NaN,
+      "smape": 2.890604019165039,
+      "rmse": 450.03167724609375,
+      "mae": 302.058837890625
+    },
+    {
+      "dataset": "us_births_daily",
+      "domain": "Healthcare/Demographics",
+      "model": "LightGBM",
+      "mase": 1.5344642400741577,
+      "crps": NaN,
+      "smape": 3.8197100162506104,
+      "rmse": 558.07666015625,
+      "mae": 407.3392333984375
+    },
+    {
+      "dataset": "us_births_daily",
+      "domain": "Healthcare/Demographics",
+      "model": "CompactTS_Tiny",
+      "mase": 0.9329519867897034,
+      "crps": NaN,
+      "smape": 2.3743937015533447,
+      "rmse": 388.1134338378906,
+      "mae": 247.66165161132812,
+      "mase_std": 0.019605892146219942
+    },
+    {
+      "dataset": "us_births_daily",
+      "domain": "Healthcare/Demographics",
+      "model": "CompactTS_Small",
+      "mase": 0.9353118538856506,
+      "crps": NaN,
+      "smape": 2.380311965942383,
+      "rmse": 389.32098388671875,
+      "mae": 248.28810119628906,
+      "mase_std": 0.005624527854436824
+    },
+    {
+      "dataset": "us_births_daily",
+      "domain": "Healthcare/Demographics",
+      "model": "CompactTS_Medium",
+      "mase": 0.9310045838356018,
+      "crps": NaN,
+      "smape": 2.3721110820770264,
+      "rmse": 379.5432434082031,
+      "mae": 247.1446990966797
+    },
+    {
+      "dataset": "us_births_daily",
+      "domain": "Healthcare/Demographics",
+      "model": "CompactTS_Large",
+      "mase": 0.908909022808075,
+      "crps": NaN,
+      "smape": 2.323254346847534,
+      "rmse": 371.16851806640625,
+      "mae": 241.27920532226562
+    },
+    {
+      "dataset": "us_births_daily",
+      "domain": "Healthcare/Demographics",
+      "model": "CompactTS_Probabilistic",
+      "mase": 0.9669274687767029,
+      "crps": 211.24595642089844,
+      "smape": 2.4576480388641357,
+      "rmse": 412.4574890136719,
+      "mae": 256.6807861328125
+    },
+    {
+      "dataset": "sz_taxi_hourly",
+      "domain": "Transport",
+      "model": "Naive",
+      "mase": 0.944980263710022,
+      "crps": NaN,
+      "smape": 10.76954460144043,
+      "rmse": 4.307094097137451,
+      "mae": 3.45479416847229
+    },
+    {
+      "dataset": "sz_taxi_hourly",
+      "domain": "Transport",
+      "model": "SeasonalNaive",
+      "mase": 0.5161476135253906,
+      "crps": NaN,
+      "smape": 5.986118793487549,
+      "rmse": 2.441410541534424,
+      "mae": 1.8870062828063965
+    },
+    {
+      "dataset": "sz_taxi_hourly",
+      "domain": "Transport",
+      "model": "AutoETS",
+      "mase": 0.4753741919994354,
+      "crps": NaN,
+      "smape": 5.5864577293396,
+      "rmse": 2.2565343379974365,
+      "mae": 1.737941026687622
+    },
+    {
+      "dataset": "sz_taxi_hourly",
+      "domain": "Transport",
+      "model": "AutoARIMA",
+      "mase": 0.5630860924720764,
+      "crps": NaN,
+      "smape": 6.552305698394775,
+      "rmse": 2.6797091960906982,
+      "mae": 2.058610677719116
+    },
+    {
+      "dataset": "sz_taxi_hourly",
+      "domain": "Transport",
+      "model": "Ridge",
+      "mase": 0.4685380160808563,
+      "crps": NaN,
+      "smape": 5.390535354614258,
+      "rmse": 2.155298948287964,
+      "mae": 1.7129483222961426
+    },
+    {
+      "dataset": "sz_taxi_hourly",
+      "domain": "Transport",
+      "model": "DLinear",
+      "mase": 0.6215497851371765,
+      "crps": NaN,
+      "smape": 7.093207359313965,
+      "rmse": 2.849719762802124,
+      "mae": 2.272350788116455
+    },
+    {
+      "dataset": "sz_taxi_hourly",
+      "domain": "Transport",
+      "model": "NLinear",
+      "mase": 0.6677042841911316,
+      "crps": NaN,
+      "smape": 7.665412902832031,
+      "rmse": 3.033673048019409,
+      "mae": 2.441088914871216
+    },
+    {
+      "dataset": "sz_taxi_hourly",
+      "domain": "Transport",
+      "model": "LightGBM",
+      "mase": 0.47423791885375977,
+      "crps": NaN,
+      "smape": 5.461307525634766,
+      "rmse": 2.188257932662964,
+      "mae": 1.7337868213653564
+    },
+    {
+      "dataset": "sz_taxi_hourly",
+      "domain": "Transport",
+      "model": "CompactTS_Tiny",
+      "mase": 0.5773301124572754,
+      "crps": NaN,
+      "smape": 6.607765197753906,
+      "rmse": 2.6164486408233643,
+      "mae": 2.1106860637664795,
+      "mase_std": 0.014445317118616295
+    },
+    {
+      "dataset": "sz_taxi_hourly",
+      "domain": "Transport",
+      "model": "CompactTS_Small",
+      "mase": 0.5595883131027222,
+      "crps": NaN,
+      "smape": 6.410521507263184,
+      "rmse": 2.5494072437286377,
+      "mae": 2.045823097229004,
+      "mase_std": 0.005939473781038244
+    },
+    {
+      "dataset": "sz_taxi_hourly",
+      "domain": "Transport",
+      "model": "CompactTS_Medium",
+      "mase": 0.5411248803138733,
+      "crps": NaN,
+      "smape": 6.193922519683838,
+      "rmse": 2.4876928329467773,
+      "mae": 1.9783217906951904
+    },
+    {
+      "dataset": "sz_taxi_hourly",
+      "domain": "Transport",
+      "model": "CompactTS_Large",
+      "mase": 0.5549639463424683,
+      "crps": NaN,
+      "smape": 6.361013412475586,
+      "rmse": 2.5865447521209717,
+      "mae": 2.028916597366333
+    },
+    {
+      "dataset": "sz_taxi_hourly",
+      "domain": "Transport",
+      "model": "CompactTS_Probabilistic",
+      "mase": 0.6497359275817871,
+      "crps": 1.856088399887085,
+      "smape": 7.423740386962891,
+      "rmse": 2.943693161010742,
+      "mae": 2.3753976821899414
+    }
+  ]
+}
